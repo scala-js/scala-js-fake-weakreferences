@@ -14,7 +14,7 @@ New applications should avoid this library.
 Add the following dependency to your project settings:
 
 ```scala
-libraryDependencies += "org.scala-js" %%% "scalajs-fake-weakreferences" % "1.0.0"
+libraryDependencies += ("org.scala-js" %%% "scalajs-fake-weakreferences" % "1.0.0").cross(CrossVersion.for3Use2_13)
 ```
 
 When using a `crossProject`, add the above in `.jsSettings(...)`.
